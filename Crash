@@ -1,0 +1,1010 @@
+---- Minecraft Crash Report ----
+// Sorry :(
+
+Time: 2025-10-15 13:34:39
+Description: Watching Server
+
+java.lang.Error: ServerHangWatchdog detected that a single server tick took 60.03 seconds (should be max 0.05)
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at dev.worldgen.tectonic.worldgen.densityfunction.ConfigNoise.m_207456_(ConfigNoise.java:40) ~[tectonic-3.0.13-forge-1.20.1.jar%23426!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.m_224127_(DensityFunctions.java:1270) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_224117_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$$Lambda/0x00007b4599796ea0.m_216122_(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:214) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_207456_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.m_224127_(DensityFunctions.java:1270) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_224117_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$$Lambda/0x00007b4599796ea0.m_216122_(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:214) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_207456_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.m_224127_(DensityFunctions.java:1270) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_224117_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$$Lambda/0x00007b4599796ea0.m_216122_(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:214) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_207456_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.m_224127_(DensityFunctions.java:1270) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_224117_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$$Lambda/0x00007b4599796ea0.m_216122_(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:214) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_207456_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Clamp.m_207456_(DensityFunctions.java:887) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.NoiseRouter.m_224412_(NoiseRouter.java:75) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.level.levelgen.NoiseChunk.<init>(NoiseChunk.java:165) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator.m_224239_(NoiseBasedChunkGenerator.java:199) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bettercaves.mixins.json:ChunkGeneratorMixin,pl:mixin:APP:bettercaves.mixins.json:aquiferfix.NoiseBasedChunkGeneratorMixin,pl:mixin:A}
+	at com.github.alexthe666.alexsmobs.world.AMWorldData.getWaterHeight(AMWorldData.java:184) ~[alexsmobs-1.22.9.jar%23284!/:1.22.9] {re:classloading}
+	at com.github.alexthe666.alexsmobs.world.AMWorldData.searchForPupfishChunk(AMWorldData.java:169) ~[alexsmobs-1.22.9.jar%23284!/:1.22.9] {re:classloading}
+	at com.github.alexthe666.alexsmobs.world.AMWorldData.tickPupfish(AMWorldData.java:155) ~[alexsmobs-1.22.9.jar%23284!/:1.22.9] {re:classloading}
+	at com.github.alexthe666.alexsmobs.event.ServerEvents.onServerTick(ServerEvents.java:138) ~[alexsmobs-1.22.9.jar%23284!/:1.22.9] {re:classloading}
+	at com.github.alexthe666.alexsmobs.event.__ServerEvents_onServerTick_LevelTickEvent.invoke(.dynamic) ~[alexsmobs-1.22.9.jar%23284!/:1.22.9] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraftforge.eventbus.EventBus$$Lambda/0x00007b4594c0d790.invoke(Unknown Source) ~[?:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraftforge.event.ForgeEventFactory.onPreLevelTick(ForgeEventFactory.java:950) ~[forge-1.20.1-47.4.0-universal.jar%23462!/:?] {re:mixin,re:classloading,pl:mixin:APP:aether.mixins.json:common.ForgeEventFactoryMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:890) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:lithostitched.mixins.json:server.DedicatedServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer$$Lambda/0x00007b459968ec78.run(Unknown Source) ~[?:?] {}
+	at java.lang.Thread.runWith(Thread.java:1596) ~[?:?] {re:mixin}
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?] {re:mixin}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Suspected Mods: 
+	Tectonic (tectonic), Version: 3.0.13
+		Issue tracker URL: https://github.com/Apollounknowndev/tectonic/issues
+		at TRANSFORMER/tectonic@3.0.13/dev.worldgen.tectonic.worldgen.densityfunction.ConfigNoise.m_207456_(ConfigNoise.java:40)
+
+	Alex's Mobs (alexsmobs), Version: 1.22.9
+		Issue tracker URL: https://github.com/Alex-the-666/AlexsMobs/issues
+		at TRANSFORMER/alexsmobs@1.22.9/com.github.alexthe666.alexsmobs.world.AMWorldData.getWaterHeight(AMWorldData.java:184)
+Stacktrace:
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at dev.worldgen.tectonic.worldgen.densityfunction.ConfigNoise.m_207456_(ConfigNoise.java:40) ~[tectonic-3.0.13-forge-1.20.1.jar%23426!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.m_224127_(DensityFunctions.java:1270) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_224117_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$$Lambda/0x00007b4599796ea0.m_216122_(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:214) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_207456_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.m_224127_(DensityFunctions.java:1270) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_224117_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$$Lambda/0x00007b4599796ea0.m_216122_(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:214) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_207456_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.m_224127_(DensityFunctions.java:1270) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_224117_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$$Lambda/0x00007b4599796ea0.m_216122_(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:214) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_207456_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.m_224127_(DensityFunctions.java:1270) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_224117_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline$$Lambda/0x00007b4599796ea0.m_216122_(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:214) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211586_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.util.CubicSpline$Multipoint$$Lambda/0x00007b45997970c8.apply(Unknown Source) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at net.minecraft.util.CubicSpline$Multipoint.m_211396_(CubicSpline.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_207456_(DensityFunctions.java:1221) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Clamp.m_207456_(DensityFunctions.java:887) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$Ap2.m_207456_(DensityFunctions.java:1179) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.NoiseRouter.m_224412_(NoiseRouter.java:75) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading,re:mixin}
+	at net.minecraft.world.level.levelgen.NoiseChunk.<init>(NoiseChunk.java:165) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator.m_224239_(NoiseBasedChunkGenerator.java:199) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bettercaves.mixins.json:ChunkGeneratorMixin,pl:mixin:APP:bettercaves.mixins.json:aquiferfix.NoiseBasedChunkGeneratorMixin,pl:mixin:A}
+	at com.github.alexthe666.alexsmobs.world.AMWorldData.getWaterHeight(AMWorldData.java:184) ~[alexsmobs-1.22.9.jar%23284!/:1.22.9] {re:classloading}
+	at com.github.alexthe666.alexsmobs.world.AMWorldData.searchForPupfishChunk(AMWorldData.java:169) ~[alexsmobs-1.22.9.jar%23284!/:1.22.9] {re:classloading}
+	at com.github.alexthe666.alexsmobs.world.AMWorldData.tickPupfish(AMWorldData.java:155) ~[alexsmobs-1.22.9.jar%23284!/:1.22.9] {re:classloading}
+	at com.github.alexthe666.alexsmobs.event.ServerEvents.onServerTick(ServerEvents.java:138) ~[alexsmobs-1.22.9.jar%23284!/:1.22.9] {re:classloading}
+	at com.github.alexthe666.alexsmobs.event.__ServerEvents_onServerTick_LevelTickEvent.invoke(.dynamic) ~[alexsmobs-1.22.9.jar%23284!/:1.22.9] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraftforge.eventbus.EventBus$$Lambda/0x00007b4594c0d790.invoke(Unknown Source) ~[?:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraftforge.event.ForgeEventFactory.onPreLevelTick(ForgeEventFactory.java:950) ~[forge-1.20.1-47.4.0-universal.jar%23462!/:?] {re:mixin,re:classloading,pl:mixin:APP:aether.mixins.json:common.ForgeEventFactoryMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:890) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:lithostitched.mixins.json:server.DedicatedServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer$$Lambda/0x00007b459968ec78.run(Unknown Source) ~[?:?] {}
+-- Thread Dump --
+Details:
+	Threads: "Reference Handler" daemon prio=10 Id=10 RUNNABLE
+	at java.base@21.0.8/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@21.0.8/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+	at java.base@21.0.8/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+
+"Finalizer" daemon prio=8 Id=11 WAITING on java.lang.ref.NativeReferenceQueue$Lock@71f00f3
+	at java.base@21.0.8/java.lang.Object.wait0(Native Method)
+	-  waiting on java.lang.ref.NativeReferenceQueue$Lock@71f00f3
+	at java.base@21.0.8/java.lang.Object.wait(Object.java:366)
+	at java.base@21.0.8/java.lang.Object.wait(Object.java:339)
+	at java.base@21.0.8/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	at java.base@21.0.8/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+	at java.base@21.0.8/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+
+"Signal Dispatcher" daemon prio=9 Id=12 RUNNABLE
+
+
+"Common-Cleaner" daemon prio=8 Id=17 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@9d8fe60
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@9d8fe60
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+	at java.base@21.0.8/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"Notification Thread" daemon prio=9 Id=18 RUNNABLE
+
+
+"JNA Cleaner" daemon prio=5 Id=25 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@de76b83
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@de76b83
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:67)
+	at java.base@21.0.8/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	...
+
+
+"Timer hack thread" daemon prio=5 Id=26 TIMED_WAITING
+	at java.base@21.0.8/java.lang.Thread.sleep0(Native Method)
+	at java.base@21.0.8/java.lang.Thread.sleep(Thread.java:509)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.Util$9.run(Util.java:672)
+
+
+"Structurize IO Worker #0" daemon prio=5 Id=36 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48e5f45b
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48e5f45b
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673)
+	...
+
+
+"Thread-4" daemon prio=5 Id=40 RUNNABLE
+	at java.base@21.0.8/java.util.concurrent.ConcurrentHashMap$ValuesView.iterator(ConcurrentHashMap.java:4743)
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.6.4/com.electronwill.nightconfig.core.file.FileWatcher$WatcherThread.run(FileWatcher.java:162)
+
+
+"FileSystemWatchService" daemon prio=5 Id=41 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Thread-5" daemon prio=5 Id=42 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@37026d2c
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@37026d2c
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673)
+	...
+
+
+"FileSystemWatchService" daemon prio=5 Id=43 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Thread-6" daemon prio=5 Id=44 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7967be52
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7967be52
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673)
+	...
+
+
+"FileSystemWatchService" daemon prio=5 Id=45 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Thread-7" daemon prio=5 Id=46 RUNNABLE
+	at java.base@21.0.8/java.util.concurrent.ConcurrentHashMap$ValuesView.iterator(ConcurrentHashMap.java:4743)
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.6.4/com.electronwill.nightconfig.core.file.FileWatcher$WatcherThread.run(FileWatcher.java:162)
+
+
+"FileSystemWatchService" daemon prio=5 Id=47 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"FileSystemWatchService" daemon prio=5 Id=48 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"ConfigSaver" daemon prio=5 Id=56 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4f6a798e
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4f6a798e
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	...
+
+
+"Yggdrasil Key Fetcher" daemon prio=5 Id=60 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@28ca0b14
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@28ca0b14
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+	at java.base@21.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@21.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	...
+
+
+"Server thread" prio=5 Id=66 RUNNABLE
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397)
+	at TRANSFORMER/tectonic@3.0.13/dev.worldgen.tectonic.worldgen.densityfunction.ConfigNoise.m_207456_(ConfigNoise.java:40)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.DensityFunctions$HolderHolder.m_207456_(DensityFunctions.java:397)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.DensityFunctions$MarkerOrMarked.m_207456_(DensityFunctions.java:428)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.DensityFunctions$Spline$Coordinate.m_224127_(DensityFunctions.java:1270)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.DensityFunctions$Spline.m_224117_(DensityFunctions.java:1221)
+	...
+
+
+"Server console handler" daemon prio=5 Id=68 RUNNABLE (in native)
+	at java.base@21.0.8/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@21.0.8/java.io.FileInputStream.read(FileInputStream.java:287)
+	at java.base@21.0.8/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base@21.0.8/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base@21.0.8/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base@21.0.8/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base@21.0.8/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base@21.0.8/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	...
+
+	Number of locked synchronizers = 3
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@c85682c
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@4854d2c0
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@546e744d
+
+
+"DestroyJavaVM" prio=5 Id=69 RUNNABLE
+
+
+"Netty Epoll Server IO #0" daemon prio=5 Id=70 RUNNABLE
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"FileSystemWatchService" daemon prio=5 Id=71 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"FileSystemWatchService" daemon prio=5 Id=72 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Netty Epoll Server IO #1" daemon prio=5 Id=73 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"Netty Epoll Server IO #2" daemon prio=5 Id=74 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"Thread-15" prio=5 Id=75 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2c84577f
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2c84577f
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673)
+	...
+
+
+"FileSystemWatchService" daemon prio=5 Id=76 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@21.0.8/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:307)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"Netty Epoll Server IO #3" daemon prio=5 Id=79 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	...
+
+
+"Worker-Main-26" daemon prio=5 Id=105 RUNNABLE
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer.handler$zzh000$bettercaves$fixAquiferLiquids(Aquifer.java:756)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.Aquifer$NoiseBasedAquifer.m_207104_(Aquifer.java:359)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.NoiseChunk.m_209215_(NoiseChunk.java:193)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.NoiseChunk$$Lambda/0x00007b45997d8000.m_207387_(Unknown Source)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.material.MaterialRuleList.m_207387_(MaterialRuleList.java:15)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.NoiseChunk.m_209247_(NoiseChunk.java:225)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator.m_224284_(NoiseBasedChunkGenerator.java:384)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator.m_224324_(NoiseBasedChunkGenerator.java:313)
+	...
+
+
+"Worker-Main-32" daemon prio=5 Id=111 WAITING on java.util.concurrent.ForkJoinPool@b678ecb
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@b678ecb
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1893)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"Worker-Main-38" daemon prio=5 Id=117 TIMED_WAITING on java.util.concurrent.ForkJoinPool@b678ecb
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@b678ecb
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:449)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1891)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"IO-Worker-40" prio=5 Id=119 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@654b8fb5
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@654b8fb5
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	...
+
+
+"Server Watchdog" daemon prio=5 Id=124 RUNNABLE
+	at java.management@21.0.8/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@21.0.8/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:518)
+	at java.management@21.0.8/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:506)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.dedicated.ServerWatchdog.run(ServerWatchdog.java:41)
+	at java.base@21.0.8/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.8/java.lang.Thread.run(Thread.java:1583)
+
+
+"LanServerPinger #1" daemon prio=5 Id=125 TIMED_WAITING
+	at java.base@21.0.8/java.lang.Thread.sleep0(Native Method)
+	at java.base@21.0.8/java.lang.Thread.sleep(Thread.java:509)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.client.server.LanServerPinger.run(LanServerPinger.java:48)
+
+
+"VoiceChatPacketProcessingThread" daemon prio=5 Id=129 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4220534d
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4220534d
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+	at java.base@21.0.8/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+	at TRANSFORMER/voicechat@1.20.1-2.6.5/de.maxhenkel.voicechat.voice.server.Server$ProcessThread.run(Server.java:262)
+
+
+"VoiceChatServerThread" daemon prio=5 Id=128 RUNNABLE (in native)
+	at java.base@21.0.8/sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at java.base@21.0.8/sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:814)
+	at java.base@21.0.8/sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:790)
+	at java.base@21.0.8/sun.nio.ch.DatagramChannelImpl.tryBlockingReceive(DatagramChannelImpl.java:751)
+	at java.base@21.0.8/sun.nio.ch.DatagramChannelImpl.blockingReceive(DatagramChannelImpl.java:692)
+	at java.base@21.0.8/sun.nio.ch.DatagramSocketAdaptor.receive(DatagramSocketAdaptor.java:204)
+	at java.base@21.0.8/java.net.DatagramSocket.receive(DatagramSocket.java:714)
+	at TRANSFORMER/voicechat@1.20.1-2.6.5/de.maxhenkel.voicechat.plugins.impl.VoicechatSocketBase.read(VoicechatSocketBase.java:13)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@4c91dbd9
+
+
+"DE Contributor Fetcher #0" daemon prio=5 Id=131 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7b371556
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7b371556
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.8/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+	at java.base@21.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+	at java.base@21.0.8/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	...
+
+
+"IO-Worker-47" prio=5 Id=134 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@654b8fb5
+	at java.base@21.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@654b8fb5
+	at java.base@21.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.8/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.8/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.8/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	...
+
+
+
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerWatchdog.run(ServerWatchdog.java:56) ~[server-1.20.1-20230612.114412-srg.jar%23457!/:?] {re:classloading}
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?] {re:mixin}
+
+
+-- Performance stats --
+Details:
+	Random tick rate: 3
+	Level stats: ResourceKey[minecraft:dimension / minecraft:overworld]: players: 0, entities: 300,300,110,537,537,0,0 [minecraft:item:118,minecraft:falling_block:96,artifacts:mimic:25,alexsmobs:seal:12,iceandfire:hippocampus:12], block_entities: 821 [minecraft:sculk_sensor:310,minecraft:sculk_catalyst:96,minecraft:campfire:73,minecraft:furnace:50,create:simple_kinetic:34], block_ticks: 2131, fluid_ticks: 1222, chunk_source: Chunks[S] W: 2610 E: 299,299,110,537,537,0,0,
+ResourceKey[minecraft:dimension / mahoutsukai:reality_marble]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / fossil:treasure_room]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / aether:the_aether]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_nether]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / twilightforest:twilight_forest]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_end]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / fossil:anu_lair]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Linux (amd64) version 6.14.0-33-generic
+	Java Version: 21.0.8, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 162535464 bytes (155 MiB) / 2936012800 bytes (2800 MiB) up to 2936012800 bytes (2800 MiB)
+	CPUs: 2
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Celeron(R) N4020 CPU @ 1.10GHz
+	Identifier: Intel64 Family 6 Model 122 Stepping 8
+	Microarchitecture: Goldmont Plus
+	Frequency (GHz): 1.10
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 2
+	Graphics card #0 name: GeminiLake [UHD Graphics 600]
+	Graphics card #0 vendor: Intel Corporation (0x8086)
+	Graphics card #0 VRAM (MB): 256.00
+	Graphics card #0 deviceId: 0x3185
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 15967.21
+	Virtual memory used (MB): 5468.89
+	Swap memory total (MB): 14127.60
+	Swap memory used (MB): 1826.88
+	JVM Flags: 8 total; -Xms2G -Xmx2800M -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -XX:+OptimizeStringConcat -XX:+TieredCompilation
+	Server Running: true
+	Player Count: 0 / 20; []
+	Data Packs: vanilla, mod:betterdungeons, mod:underground_villages, mod:playeranimator (incompatible), mod:projecte, mod:bettercaves, mod:forgeendertech, mod:yungsapi, mod:spellbound_weapons_mr, mod:guardvillagers (incompatible), mod:createdieselgenerators (incompatible), mod:minetraps, mod:balm, mod:betterfortresses, mod:cloth_config (incompatible), mod:novillagerdm, mod:structure_gel, mod:infectious, mod:morevillagers (incompatible), mod:fantasy_armor (incompatible), mod:explorify, mod:ironfurnaces, mod:botania, mod:curios (incompatible), mod:usefulfood (incompatible), mod:mr_dungeons_andtaverns (incompatible), mod:bettervillage, mod:tf_dnv, mod:fabric_entity_events_v1, mod:accessories, mod:cumulus_menus, mod:cfm, mod:flib, mod:nitrogen_internals, mod:codechickenlib (incompatible), mod:bettermineshafts, mod:betterjungletemples, mod:mowziesmobs, mod:jei, mod:lithostitched, mod:libraryferret, mod:goblintraders (incompatible), mod:caelus (incompatible), mod:epicfight, mod:travelersbackpack, mod:botanypots (incompatible), mod:glitchcore (incompatible), mod:sereneseasons, mod:midnightlib (incompatible), mod:forge, mod:ironchest, mod:dungeons_arise, mod:awesomedungeonocean, mod:tectonic (incompatible), mod:duneons, mod:aquaculturedelight, mod:villagergolemhealer, mod:block_factorys_bosses, mod:villager_farmer_house, mod:voicechat (incompatible), mod:trade_cycling, mod:terrablender, mod:biomesoplenty, mod:fabric_api_base, mod:awesomedungeonnether, mod:immersiveengineering (incompatible), mod:ohthetreesyoullgrow, mod:adlods, mod:corgilib, mod:domum_ornamentum, mod:kotlinforforge (incompatible), mod:tctcore, mod:farmersrespite, mod:flywheel, mod:ponder (incompatible), mod:mantle (incompatible), mod:gravestone, mod:dacxirons, mod:structurize, mod:underwater_village, mod:lootr, mod:fabric_object_builder_api_v1, mod:aquaculture, mod:cristellib (incompatible), mod:weaponmaster_ydm (incompatible), mod:skyvillages (incompatible), mod:kuma_api, mod:merenc (incompatible), mod:onlyhammers (incompatible), mod:geckolib, mod:morehitboxes (incompatible), mod:ars_nouveau (incompatible), mod:aether, mod:towntalk (incompatible), mod:naturalist (incompatible), mod:betteroceanmonuments, mod:incendium, mod:immersive_aircraft (incompatible), mod:sophisticatedcore (incompatible), mod:dungeons_and_combat, mod:citadel (incompatible), mod:alexsmobs (incompatible), mod:iceandfire, mod:dragonseeker, mod:fabric_data_attachment_api_v1, mod:iceandfiredungeons, mod:mixinextras (incompatible), mod:aether_villages, mod:bookshelf, mod:sophisticatedbackpacks (incompatible), mod:fpsboostremake, mod:mcwdoors, mod:railways, mod:carryon (incompatible), mod:more_villager_trades, mod:fzzy_config (incompatible), mod:twilightforest, mod:create_connected, mod:mcwbridges, mod:farmersdelight, mod:culturaldelights, mod:farmers_structures, mod:largemeals, mod:many_more_ores_and_crafts (incompatible), mod:create_ultimate_factory, mod:born_in_chaos_v1, mod:lionfishapi (incompatible), mod:dungeons_enhanced, mod:cataclysm (incompatible), mod:patchouli (incompatible), mod:blockui, mod:multipiston, mod:underground_village, mod:collective, mod:cerbons_api, mod:oreexcavation (incompatible), mod:betterstrongholds, mod:createliquidfuel (incompatible), mod:spartanweaponry, mod:architectury (incompatible), mod:framework, mod:smallships (incompatible), mod:infinitetrading, mod:t_and_t (incompatible), mod:effortlessbuilding, mod:endervillages, mod:cyclic, mod:cucumber, mod:trashslot, mod:biomeswevegone, mod:configapi (incompatible), mod:create, mod:createdeco (incompatible), mod:dndecor, mod:create_structures, mod:waystones, mod:structory, mod:artifacts, mod:magistuarmory (incompatible), mod:dungeoncrawl, mod:betterdeserttemples, mod:spiral_tower_village (incompatible), mod:fossil (incompatible), mod:mahoutsukai, mod:bosses_of_mass_destruction, mod:terralith, mod:tfmg (incompatible), mod:brandonscore (incompatible), mod:draconicevolution, mod:mysticalagriculture, mod:craftingtweaks, mod:tconstruct (incompatible), mod:create_better_villagers, mod:alexscaves, mod:simplyswords (incompatible), mod:spartanshields, mod:create_sa, mod:storagedrawers (incompatible), mod:irons_spellbooks, mod:toughasnails (incompatible), mod:miners_delight (incompatible), mod:dynamicvillage (incompatible), mod:alexsdelight, mod:mvw, mod:packetfixer (incompatible), mod:expandability (incompatible), mod:create_enchantment_industry (incompatible), mod:create_structures_arise, mod:cherry_village (incompatible), mod:createaddition (incompatible), mod:enderite (incompatible), tectonic/tectonic (incompatible), tectonic/tectonic/overlay.mod, tectonic/tectonic/overlay.terratonic, lithostitched/breaks_seed_parity, T&T Waystone Patch Pack (incompatible), builtin/aether_accessories, create:dynamic_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		kotlinforforge@4.11.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		YungsBetterDungeons-1.20-Forge-4.0.4.jar          |YUNG's Better Dungeons        |betterdungeons                |1.20-Forge-4.0.4    |DONE      |Manifest: NOSIGNATURE
+		UndergroundVillages-forge-1.20.1-2.1.0.jar        |Underground Villages Mod      |underground_villages          |2.1.0               |DONE      |Manifest: NOSIGNATURE
+		player-animation-lib-forge-1.0.2-rc1+1.20.jar     |Player Animator               |playeranimator                |1.0.2-rc1+1.20      |DONE      |Manifest: NOSIGNATURE
+		ProjectE-1.20.1-PE1.0.1.jar                       |ProjectE                      |projecte                      |1.0.1               |DONE      |Manifest: NOSIGNATURE
+		YungsBetterCaves-1.20.1-Forge-2.0.5.jar           |YUNG's Better Caves           |bettercaves                   |1.20.1-Forge-2.0.5  |DONE      |Manifest: NOSIGNATURE
+		ForgeEndertech-1.20.1-11.1.9.0-build.1584.jar     |ForgeEndertech                |forgeendertech                |11.1.9.0            |DONE      |Manifest: NOSIGNATURE
+		YungsApi-1.20-Forge-4.0.6.jar                     |YUNG's API                    |yungsapi                      |1.20-Forge-4.0.6    |DONE      |Manifest: NOSIGNATURE
+		spellbound-weapons-v4.0.5m.jar                    |Spellbound Weapons            |spellbound_weapons_mr         |4.0.5m              |DONE      |Manifest: NOSIGNATURE
+		guardvillagers-1.20.1-1.6.11.jar                  |Guard Villagers               |guardvillagers                |1.20.1-1.6.11       |DONE      |Manifest: NOSIGNATURE
+		createdieselgenerators-1.20.1-1.3.5.jar           |Create Diesel Generators      |createdieselgenerators        |1.20.1-1.3.5        |DONE      |Manifest: NOSIGNATURE
+		MineTraps-1.20.2-(v.2.3.0a).jar                   |MineTraps                     |minetraps                     |2.3.0a              |DONE      |Manifest: NOSIGNATURE
+		balm-forge-1.20.1-7.3.37-all.jar                  |Balm                          |balm                          |7.3.37              |DONE      |Manifest: NOSIGNATURE
+		YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar  |YUNG's Better Nether Fortresse|betterfortresses              |1.20-Forge-2.0.6    |DONE      |Manifest: NOSIGNATURE
+		cloth-config-11.1.136-forge.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.136            |DONE      |Manifest: NOSIGNATURE
+		novillagerdm-1.20.1-5.0.0.jar                     |No Villager Death Messages    |novillagerdm                  |5.0.0               |DONE      |Manifest: NOSIGNATURE
+		structure_gel-1.20.1-2.16.2.jar                   |Structure Gel API             |structure_gel                 |2.16.2              |DONE      |Manifest: NOSIGNATURE
+		Infectious-forge-1.20.1-1.6.jar                   |Infectious                    |infectious                    |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		morevillagers-forge-1.20.1-5.0.0.jar              |More Villagers                |morevillagers                 |5.0.0               |DONE      |Manifest: NOSIGNATURE
+		fantasy_armor-1.1.1-1.20.1.jar                    |Fantasy Armor                 |fantasy_armor                 |1.1.1-1.20.1        |DONE      |Manifest: NOSIGNATURE
+		Explorify v1.6.4 f15-88.mod.jar                   |Explorify                     |explorify                     |1.6.4               |DONE      |Manifest: NOSIGNATURE
+		ironfurnaces-1.20.1-4.1.6.jar                     |Iron Furnaces                 |ironfurnaces                  |4.1.6               |DONE      |Manifest: NOSIGNATURE
+		Botania-1.20.1-450-FORGE.jar                      |Botania                       |botania                       |1.20.1-450-FORGE    |DONE      |Manifest: NOSIGNATURE
+		curios-forge-5.14.1+1.20.1.jar                    |Curios API                    |curios                        |5.14.1+1.20.1       |DONE      |Manifest: NOSIGNATURE
+		UsefulFood_Reborn-1.3.7-1.20.1-Forge.jar          |UsefulFood Reborn             |usefulfood                    |1.3.7-1.20.1-Forge  |DONE      |Manifest: NOSIGNATURE
+		dungeons-and-taverns-3.0.3.f[Forge].jar           |Dungeons and Taverns          |mr_dungeons_andtaverns        |3.0.3.f             |DONE      |Manifest: NOSIGNATURE
+		bettervillage-forge-1.20.1-3.3.1-all.jar          |Better village                |bettervillage                 |3.3.1               |DONE      |Manifest: NOSIGNATURE
+		tf_dnv-1.2.2.jar                                  |Twilight Forest - Dungeons & V|tf_dnv                        |1.2.2               |DONE      |Manifest: NOSIGNATURE
+		fabric-entity-events-v1-1.6.0+6274ab9d77.jar      |Fabric Entity Events (v1)     |fabric_entity_events_v1       |1.6.0+6274ab9d77    |DONE      |Manifest: NOSIGNATURE
+		accessories-neoforge-1.0.0-beta.46+1.20.1.jar     |Accessories                   |accessories                   |1.0.0-beta46+1.20.1 |DONE      |Manifest: NOSIGNATURE
+		cumulus_menus-1.20.1-1.0.1-neoforge.jar           |Cumulus                       |cumulus_menus                 |1.20.1-1.0.1-neoforg|DONE      |Manifest: NOSIGNATURE
+		cfm-forge-1.20.1-7.0.0-pre36.jar                  |MrCrayfish's Furniture Mod    |cfm                           |7.0.0-pre36         |DONE      |Manifest: 0d:78:5f:44:c0:47:0c:8c:e2:63:a3:04:43:d4:12:7d:b0:7c:35:37:dc:40:b1:c1:98:ec:51:eb:3b:3c:45:99
+		flib-1.20.1-0.0.15.jar                            |flib                          |flib                          |0.0.15              |DONE      |Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		nitrogen_internals-1.20.1-1.0.12-neoforge.jar     |Nitrogen                      |nitrogen_internals            |1.20.1-1.0.12-neofor|DONE      |Manifest: NOSIGNATURE
+		CodeChickenLib-1.20.1-4.4.0.516-universal.jar     |CodeChicken Lib               |codechickenlib                |4.4.0.516           |DONE      |Manifest: 31:e6:db:63:47:4a:6e:e0:0a:2c:11:d1:76:db:4e:82:ff:56:2d:29:93:d2:e5:02:bd:d3:bd:9d:27:47:a5:71
+		YungsBetterMineshafts-1.20-Forge-4.0.4.jar        |YUNG's Better Mineshafts      |bettermineshafts              |1.20-Forge-4.0.4    |DONE      |Manifest: NOSIGNATURE
+		YungsBetterJungleTemples-1.20-Forge-2.0.5.jar     |YUNG's Better Jungle Temples  |betterjungletemples           |1.20-Forge-2.0.5    |DONE      |Manifest: NOSIGNATURE
+		mowziesmobs-1.7.3.jar                             |Mowzie's Mobs                 |mowziesmobs                   |1.7.3               |DONE      |Manifest: NOSIGNATURE
+		jei-1.20.1-forge-15.20.0.116.jar                  |Just Enough Items             |jei                           |15.20.0.116         |DONE      |Manifest: NOSIGNATURE
+		lithostitched-forge-1.20.1-1.4.11.jar             |Lithostitched                 |lithostitched                 |1.4.11              |DONE      |Manifest: NOSIGNATURE
+		libraryferret-forge-1.20.1-4.0.0.jar              |Library ferret                |libraryferret                 |4.0.0               |DONE      |Manifest: NOSIGNATURE
+		goblintraders-forge-1.20.1-1.11.5.jar             |Goblin Traders                |goblintraders                 |1.11.5              |DONE      |Manifest: 0d:78:5f:44:c0:47:0c:8c:e2:63:a3:04:43:d4:12:7d:b0:7c:35:37:dc:40:b1:c1:98:ec:51:eb:3b:3c:45:99
+		caelus-forge-3.2.0+1.20.1.jar                     |Caelus API                    |caelus                        |3.2.0+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		epicfight-forge-20.12.11-1.20.1.jar               |Epic Fight                    |epicfight                     |20.12.11            |DONE      |Manifest: NOSIGNATURE
+		travelersbackpack-forge-1.20.1-9.1.44.jar         |Traveler's Backpack           |travelersbackpack             |9.1.44              |DONE      |Manifest: NOSIGNATURE
+		BotanyPots-Forge-1.20.1-13.0.41.jar               |BotanyPots                    |botanypots                    |13.0.41             |DONE      |Manifest: NOSIGNATURE
+		GlitchCore-forge-1.20.1-0.0.1.1.jar               |GlitchCore                    |glitchcore                    |0.0.1.1             |DONE      |Manifest: NOSIGNATURE
+		SereneSeasons-forge-1.20.1-9.1.0.2.jar            |Serene Seasons                |sereneseasons                 |9.1.0.2             |DONE      |Manifest: NOSIGNATURE
+		midnightlib-1.4.2-forge.jar                       |MidnightLib                   |midnightlib                   |1.4.2               |DONE      |Manifest: NOSIGNATURE
+		forge-1.20.1-47.4.0-universal.jar                 |Forge                         |forge                         |47.4.0              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		ironchest-1.20.1-14.4.4.jar                       |Iron Chests                   |ironchest                     |1.20.1-14.4.4       |DONE      |Manifest: NOSIGNATURE
+		DungeonsArise-1.20.x-2.1.58-release.jar           |When Dungeons Arise           |dungeons_arise                |2.1.58-1.20.x       |DONE      |Manifest: NOSIGNATURE
+		awesomedungeonocean-forge-1.20.1-3.3.0.jar        |Awesome dungeon edition ocean |awesomedungeonocean           |3.3.0               |DONE      |Manifest: NOSIGNATURE
+		tectonic-3.0.13-forge-1.20.1.jar                  |Tectonic                      |tectonic                      |3.0.13              |DONE      |Manifest: NOSIGNATURE
+		dungeons_1.18_mc1.20.1.jar                        |Minecraft Dungeons            |duneons                       |1.18                |DONE      |Manifest: NOSIGNATURE
+		server-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: NOSIGNATURE
+		aquaculturedelight-1.1.1-forge-1.20.1.jar         |Aquaculture Delight           |aquaculturedelight            |1.1.1               |DONE      |Manifest: NOSIGNATURE
+		villagergolemhealer 1.20.1.jar                    |villagergolemhealer           |villagergolemhealer           |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		bossesrise-1.20.1-forge-1.0.9.2b.jar              |Bosses'Rises                  |block_factorys_bosses         |1.0.9.2.            |DONE      |Manifest: NOSIGNATURE
+		villager_farmer_house-1.0.0-forge-1.20.1.jar      |Villager Farmer House         |villager_farmer_house         |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		voicechat-forge-1.20.1-2.6.5.jar                  |Simple Voice Chat             |voicechat                     |1.20.1-2.6.5        |DONE      |Manifest: NOSIGNATURE
+		trade-cycling-forge-1.20.1-1.0.18.jar             |Trade Cycling                 |trade_cycling                 |1.20.1-1.0.18       |DONE      |Manifest: NOSIGNATURE
+		TerraBlender-forge-1.20.1-3.0.1.10.jar            |TerraBlender                  |terrablender                  |3.0.1.10            |DONE      |Manifest: NOSIGNATURE
+		BiomesOPlenty-forge-1.20.1-19.0.0.96.jar          |Biomes O' Plenty              |biomesoplenty                 |19.0.0.96           |DONE      |Manifest: NOSIGNATURE
+		fabric-api-base-0.4.31+ef105b4977.jar             |Fabric API Base               |fabric_api_base               |0.4.31+ef105b4977   |DONE      |Manifest: NOSIGNATURE
+		awesomedungeonnether-forge-1.20.1-3.1.1.jar       |Awesome dungeon nether        |awesomedungeonnether          |3.1.1               |DONE      |Manifest: NOSIGNATURE
+		ImmersiveEngineering-1.20.1-10.2.0-183.jar        |Immersive Engineering         |immersiveengineering          |1.20.1-10.2.0-183   |DONE      |Manifest: 44:39:94:cf:1d:8c:be:3c:7f:a9:ee:f4:1e:63:a5:ac:61:f9:c2:87:d5:5b:d9:d6:8c:b5:3e:96:5d:8e:3f:b7
+		Oh-The-Trees-Youll-Grow-forge-1.20.1-1.4.2.jar    |Oh The Trees You'll Grow      |ohthetreesyoullgrow           |1.4.2               |DONE      |Manifest: NOSIGNATURE
+		AdLods-1.20.1-8.1.7.0-build.1496.jar              |Large Ore Deposits            |adlods                        |8.1.7.0             |DONE      |Manifest: NOSIGNATURE
+		Corgilib-Forge-1.20.1-4.0.3.4.jar                 |CorgiLib                      |corgilib                      |4.0.3.4             |DONE      |Manifest: NOSIGNATURE
+		domum_ornamentum-1.20.1-1.0.291-snapshot-universal|Domum Ornamentum              |domum_ornamentum              |1.20.1-1.0.291-snaps|DONE      |Manifest: NOSIGNATURE
+		kffmod-4.11.0.jar                                 |Kotlin For Forge              |kotlinforforge                |4.11.0              |DONE      |Manifest: NOSIGNATURE
+		TCTcore-1.20.1.jar                                |tctcore                       |tctcore                       |2.0                 |DONE      |Manifest: NOSIGNATURE
+		farmersrespite-1.20.1-2.1.2.jar                   |Farmer's Respite              |farmersrespite                |1.20.1-2.1          |DONE      |Manifest: NOSIGNATURE
+		flywheel-forge-1.20.1-1.0.1.jar                   |Flywheel                      |flywheel                      |1.0.1               |DONE      |Manifest: NOSIGNATURE
+		Ponder-Forge-1.20.1-1.0.80.jar                    |Ponder                        |ponder                        |1.0.80              |DONE      |Manifest: NOSIGNATURE
+		Mantle-1.20.1-1.11.79.jar                         |Mantle                        |mantle                        |1.11.79             |DONE      |Manifest: NOSIGNATURE
+		gravestone-forge-1.20.1-1.0.35.jar                |Gravestone Mod                |gravestone                    |1.20.1-1.0.35       |DONE      |Manifest: NOSIGNATURE
+		dacxirons-1.4fix-1.20.1.jar                       |dacxirons                     |dacxirons                     |1.4fix-1.20.1       |DONE      |Manifest: NOSIGNATURE
+		structurize-1.20.1-1.0.784-snapshot.jar           |Structurize                   |structurize                   |1.20.1-1.0.784-snaps|DONE      |Manifest: NOSIGNATURE
+		underwater_village-1.0.2-forge-1.20.1.jar         |underwater_village            |underwater_village            |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		lootr-forge-1.20-0.7.35.93.jar                    |Lootr                         |lootr                         |0.7.35.92           |DONE      |Manifest: NOSIGNATURE
+		fabric-object-builder-api-v1-11.1.3+2174fc8477.jar|Fabric Object Builder API (v1)|fabric_object_builder_api_v1  |11.1.3+2174fc8477   |DONE      |Manifest: NOSIGNATURE
+		Aquaculture-1.20.1-2.5.5.jar                      |Aquaculture 2                 |aquaculture                   |2.5.5               |DONE      |Manifest: NOSIGNATURE
+		cristellib-1.1.6-forge.jar                        |Cristel Lib                   |cristellib                    |1.1.6               |DONE      |Manifest: NOSIGNATURE
+		weaponmaster_ydm-forge-1.20.1-4.2.3.jar           |YDM's Weapon Master           |weaponmaster_ydm              |4.2.3               |DONE      |Manifest: NOSIGNATURE
+		SkyVillages-1.0.4-1.19.2-1.20.1-forge-release.jar |Sky Villages                  |skyvillages                   |1.0.4               |DONE      |Manifest: NOSIGNATURE
+		kuma-api-forge-20.1.12+1.20.1.jar                 |KumaAPI                       |kuma_api                      |20.1.12             |DONE      |Manifest: NOSIGNATURE
+		MergeEnchantments-FORGE-1.20.[0-4]-v4.3.jar       |Merge Enchantments            |merenc                        |4.3                 |DONE      |Manifest: NOSIGNATURE
+		onlyhammers-com.blocklegend001.jar                |OnlyHammers                   |onlyhammers                   |1.20.1-0.6          |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.8.2.jar                   |GeckoLib 4                    |geckolib                      |4.8.2               |DONE      |Manifest: NOSIGNATURE
+		morehitboxes-forge-1.20.1-1.9.2.jar               |morehitboxes                  |morehitboxes                  |1.9.2               |DONE      |Manifest: NOSIGNATURE
+		ars_nouveau-1.20.1-4.12.7-all.jar                 |Ars Nouveau                   |ars_nouveau                   |4.12.7              |DONE      |Manifest: NOSIGNATURE
+		aether-1.20.1-1.5.2-neoforge.jar                  |The Aether                    |aether                        |1.20.1-1.5.2-neoforg|DONE      |Manifest: NOSIGNATURE
+		towntalk-1.20.1-1.1.0.jar                         |TownTalk                      |towntalk                      |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		naturalist-5.0pre5+forge-1.20.1.jar               |Naturalist                    |naturalist                    |5.0pre5             |DONE      |Manifest: NOSIGNATURE
+		YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar    |YUNG's Better Ocean Monuments |betteroceanmonuments          |1.20-Forge-3.0.4    |DONE      |Manifest: NOSIGNATURE
+		Incendium_1.20.x_v5.3.5.jar                       |Incendium                     |incendium                     |5.3.5               |DONE      |Manifest: NOSIGNATURE
+		immersive_aircraft-1.4.0+1.20.1-forge.jar         |Immersive Aircraft            |immersive_aircraft            |1.4.0+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		sophisticatedcore-1.20.1-1.2.105.1230.jar         |Sophisticated Core            |sophisticatedcore             |1.2.105.1230        |DONE      |Manifest: NOSIGNATURE
+		dungeons_and_combat-1.2.3-forge-1.20.1.jar        |dungeons and combat           |dungeons_and_combat           |1.2.3               |DONE      |Manifest: NOSIGNATURE
+		citadel-2.6.2-1.20.1.jar                          |Citadel                       |citadel                       |2.6.2               |DONE      |Manifest: NOSIGNATURE
+		alexsmobs-1.22.9.jar                              |Alex's Mobs                   |alexsmobs                     |1.22.9              |DONE      |Manifest: NOSIGNATURE
+		iceandfire-2.1.13-1.20.1-beta-5.jar               |Ice and Fire                  |iceandfire                    |2.1.13-1.20.1       |DONE      |Manifest: NOSIGNATURE
+		dragonseeker-1.2.0-1.20.1.jar                     |Dragonseeker                  |dragonseeker                  |1.2.0-1.20.1        |DONE      |Manifest: NOSIGNATURE
+		fabric-data-attachment-api-v1-1.0.0+30ef839e77.jar|Fabric Data Attachment API (v1|fabric_data_attachment_api_v1 |1.0.0+30ef839e77    |DONE      |Manifest: NOSIGNATURE
+		iceandfiredungeons-1.0.1-1.20.1.jar               |Ice and Fire Dungeons         |iceandfiredungeons            |1.0.1-1.20.1        |DONE      |Manifest: NOSIGNATURE
+		mixinextras-forge-0.4.1.jar                       |MixinExtras                   |mixinextras                   |0.4.1               |DONE      |Manifest: NOSIGNATURE
+		AetherVillages-1.20.1-1.0.7-forge.jar             |Aether Villages               |aether_villages               |1.0.7               |DONE      |Manifest: NOSIGNATURE
+		Bookshelf-Forge-1.20.1-20.2.13.jar                |Bookshelf                     |bookshelf                     |20.2.13             |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		sophisticatedbackpacks-1.20.1-3.24.9.1391.jar     |Sophisticated Backpacks       |sophisticatedbackpacks        |3.24.9.1391         |DONE      |Manifest: NOSIGNATURE
+		FPSboost-1.20.1.jar                               |FPSBoost                      |fpsboostremake                |2.0                 |DONE      |Manifest: NOSIGNATURE
+		mcw-doors-1.1.2-mc1.20.1forge.jar                 |Macaw's Doors                 |mcwdoors                      |1.1.2               |DONE      |Manifest: NOSIGNATURE
+		Steam_Rails-1.6.13-alpha+forge-mc1.20.1.jar       |Create: Steam 'n' Rails       |railways                      |1.6.13-alpha+forge-m|DONE      |Manifest: NOSIGNATURE
+		carryon-forge-1.20.1-2.1.2.7.jar                  |Carry On                      |carryon                       |2.1.2.7             |DONE      |Manifest: NOSIGNATURE
+		More+Villager+Trades+1.0.0+-+1.20.1.jar           |More Villager Trades          |more_villager_trades          |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		fzzy_config-0.7.3+1.20.1+forge.jar                |Fzzy Config                   |fzzy_config                   |0.7.3+1.20.1+forge  |DONE      |Manifest: NOSIGNATURE
+		twilightforest-1.20.1-4.3.2508-universal.jar      |The Twilight Forest           |twilightforest                |4.3.2508            |DONE      |Manifest: NOSIGNATURE
+		create_connected-1.1.7-mc1.20.1-all.jar           |Create: Connected             |create_connected              |1.1.7-mc1.20.1      |DONE      |Manifest: NOSIGNATURE
+		mcw-bridges-3.1.0-mc1.20.1forge.jar               |Macaw's Bridges               |mcwbridges                    |3.1.0               |DONE      |Manifest: NOSIGNATURE
+		FarmersDelight-1.20.1-1.2.9.jar                   |Farmer's Delight              |farmersdelight                |1.20.1-1.2.9        |DONE      |Manifest: NOSIGNATURE
+		culturaldelights-0.16.5.jar                       |Cultural Delights             |culturaldelights              |0.16.5              |DONE      |Manifest: NOSIGNATURE
+		FarmersStructures-1.0.3-1.20.jar                  |FarmersStructures             |farmers_structures            |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		largemeals-1.20.1-1.3.0.jar                       |Large Meals                   |largemeals                    |1.20.1-1.3.0        |DONE      |Manifest: NOSIGNATURE
+		many_more_ores_and_crafts-forge-1.20.1-1.1.3-1.jar|Many More Ores and Crafts     |many_more_ores_and_crafts     |1.1.3-1             |DONE      |Manifest: NOSIGNATURE
+		create_ultimate_factory-2.2.1-forge-1.20.1.jar    |Create: Ultimate Factory      |create_ultimate_factory       |2.2.1               |DONE      |Manifest: NOSIGNATURE
+		born_in_chaos_[Forge]1.20.1_1.7.2.jar             |Born in Chaos                 |born_in_chaos_v1              |1.7.2               |DONE      |Manifest: NOSIGNATURE
+		lionfishapi-2.4-Fix.jar                           |LionfishAPI                   |lionfishapi                   |2.4-Fix             |DONE      |Manifest: NOSIGNATURE
+		dungeons_enhanced-1.20.1-5.4.3.jar                |Dungeons Enhanced             |dungeons_enhanced             |5.4.3               |DONE      |Manifest: NOSIGNATURE
+		L_Enders_Cataclysm-3.16.jar                       |cataclysm                     |cataclysm                     |3.16                |DONE      |Manifest: NOSIGNATURE
+		Patchouli-1.20.1-84.1-FORGE.jar                   |Patchouli                     |patchouli                     |1.20.1-84.1-FORGE   |DONE      |Manifest: NOSIGNATURE
+		blockui-1.20.1-1.0.194.jar                        |UI Library Mod                |blockui                       |1.20.1-1.0.194      |DONE      |Manifest: NOSIGNATURE
+		multipiston-1.20-0.0.47-snapshot.jar              |Multi-Piston                  |multipiston                   |1.20-0.0.47-snapshot|DONE      |Manifest: NOSIGNATURE
+		underground_village-1.5.5.jar                     |Stoneholm, Underground Village|underground_village           |1.5.5               |DONE      |Manifest: NOSIGNATURE
+		collective-1.20.1-8.7.jar                         |Collective                    |collective                    |8.7                 |DONE      |Manifest: NOSIGNATURE
+		CerbonsAPI-Forge-1.20.1-1.1.0.jar                 |Cerbons API                   |cerbons_api                   |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		oreexcavation-1.13.174.jar                        |OreExcavation                 |oreexcavation                 |1.13.174            |DONE      |Manifest: NOSIGNATURE
+		YungsBetterStrongholds-1.20-Forge-4.0.3.jar       |YUNG's Better Strongholds     |betterstrongholds             |1.20-Forge-4.0.3    |DONE      |Manifest: NOSIGNATURE
+		createliquidfuel-2.1.1-1.20.1.jar                 |Create Liquid Fuel            |createliquidfuel              |2.1.1-1.20.1        |DONE      |Manifest: NOSIGNATURE
+		SpartanWeaponry-1.20.1-forge-3.2.1-all.jar        |Spartan Weaponry              |spartanweaponry               |3.2.1               |DONE      |Manifest: NOSIGNATURE
+		architectury-9.2.14-forge.jar                     |Architectury                  |architectury                  |9.2.14              |DONE      |Manifest: NOSIGNATURE
+		framework-forge-1.20.1-0.7.15.jar                 |Framework                     |framework                     |0.7.15              |DONE      |Manifest: 0d:78:5f:44:c0:47:0c:8c:e2:63:a3:04:43:d4:12:7d:b0:7c:35:37:dc:40:b1:c1:98:ec:51:eb:3b:3c:45:99
+		smallships-forge-1.20.1-2.0.0-b1.4.jar            |Small Ships                   |smallships                    |2.0.0-b1.4          |DONE      |Manifest: NOSIGNATURE
+		infinitetrading-1.20.1-4.6.jar                    |Infinite Trading              |infinitetrading               |4.6                 |DONE      |Manifest: NOSIGNATURE
+		Towns-and-Towers-1.12-Fabric+Forge.jar            |Towns and Towers              |t_and_t                       |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		effortlessbuilding-1.20.1-3.10.jar                |Effortless Building           |effortlessbuilding            |3.10                |DONE      |Manifest: NOSIGNATURE
+		endervillages-2.4.1-1.20.1.jar                    |The Ender Villages            |endervillages                 |2.4.1-1.20.1        |DONE      |Manifest: NOSIGNATURE
+		Cyclic-1.20.1-1.13.6.jar                          |Cyclic                        |cyclic                        |1.13.6              |DONE      |Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		Cucumber-1.20.1-7.0.15.jar                        |Cucumber Library              |cucumber                      |7.0.15              |DONE      |Manifest: NOSIGNATURE
+		trashslot-forge-1.20-15.1.2.jar                   |TrashSlot                     |trashslot                     |15.1.2              |DONE      |Manifest: NOSIGNATURE
+		Oh-The-Biomes-Weve-Gone-Forge-1.6.6.jar           |Oh The Biomes We've Gone      |biomeswevegone                |1.6.6               |DONE      |Manifest: NOSIGNATURE
+		ConfigAPI-CJ-forge-mc-1.20-2.3.2.jar              |Config API                    |configapi                     |1.20-2.3.2          |DONE      |Manifest: NOSIGNATURE
+		create-1.20.1-6.0.6.jar                           |Create                        |create                        |6.0.6               |DONE      |Manifest: NOSIGNATURE
+		createdeco-2.0.3-1.20.1-forge.jar                 |Create Deco                   |createdeco                    |2.0.3-1.20.1-forge  |DONE      |Manifest: NOSIGNATURE
+		dndecor-2.1.0.jar                                 |Design n' Decor               |dndecor                       |2.1.0               |DONE      |Manifest: NOSIGNATURE
+		create-structures-0.1.1-1.20.1-FORGE.jar          |Create: Structures            |create_structures             |0.1.1               |DONE      |Manifest: NOSIGNATURE
+		waystones-forge-1.20.1-14.1.17.jar                |Waystones                     |waystones                     |14.1.17             |DONE      |Manifest: NOSIGNATURE
+		Structory_1.20.x_v1.3.5.jar                       |Structory                     |structory                     |1.3.5               |DONE      |Manifest: NOSIGNATURE
+		artifacts-forge-9.5.16.jar                        |Artifacts                     |artifacts                     |9.5.16              |DONE      |Manifest: NOSIGNATURE
+		epic-knights-1.20.1-forge-9.31.jar                |Epic-Knights: Shields, Armor a|magistuarmory                 |9.31                |DONE      |Manifest: NOSIGNATURE
+		Dungeon Crawl-1.20.1-2.3.15.jar                   |Dungeon Crawl                 |dungeoncrawl                  |2.3.15              |DONE      |Manifest: NOSIGNATURE
+		YungsBetterDesertTemples-1.20-Forge-3.0.3.jar     |YUNG's Better Desert Temples  |betterdeserttemples           |1.20-Forge-3.0.3    |DONE      |Manifest: NOSIGNATURE
+		spiral_tower_village-0.0.2.jar                    |Spiral Tower Village          |spiral_tower_village          |0.0.2               |DONE      |Manifest: NOSIGNATURE
+		fossil-forge-1.20.1-9.2.1.3.jar                   |Fossils and Archeology: Reviva|fossil                        |9.2.1.3             |DONE      |Manifest: NOSIGNATURE
+		mahoutsukai-1.20.1-v1.34.78.jar                   |Mahou Tsukai                  |mahoutsukai                   |1.20.1-v1.34.78     |DONE      |Manifest: NOSIGNATURE
+		BOMD-Forge-1.20.1-1.1.2.jar                       |Bosses of Mass Destruction    |bosses_of_mass_destruction    |1.1.2               |DONE      |Manifest: NOSIGNATURE
+		Terralith_1.20.x_v2.5.4.jar                       |Terralith                     |terralith                     |2.5.4               |DONE      |Manifest: NOSIGNATURE
+		tfmg-1.0.2c.jar                                   |Create: The Factory Must Grow |tfmg                          |1.0.2c              |DONE      |Manifest: NOSIGNATURE
+		BrandonsCore-1.20.1-3.2.1.302-universal.jar       |Brandon's Core                |brandonscore                  |3.2.1.302           |DONE      |Manifest: 53:bb:a0:11:bd:61:e2:1a:e2:cb:fd:f8:4f:e4:cd:a5:cc:12:f4:43:f0:78:68:3b:e1:62:c6:78:3b:27:ff:fe
+		Draconic-Evolution-1.20.1-3.1.2.621-universal.jar |Draconic Evolution            |draconicevolution             |3.1.2.621           |DONE      |Manifest: 53:bb:a0:11:bd:61:e2:1a:e2:cb:fd:f8:4f:e4:cd:a5:cc:12:f4:43:f0:78:68:3b:e1:62:c6:78:3b:27:ff:fe
+		MysticalAgriculture-1.20.1-7.0.23.jar             |Mystical Agriculture          |mysticalagriculture           |7.0.23              |DONE      |Manifest: NOSIGNATURE
+		craftingtweaks-forge-1.20.1-18.2.6.jar            |CraftingTweaks                |craftingtweaks                |18.2.6              |DONE      |Manifest: NOSIGNATURE
+		TConstruct-1.20.1-3.10.2.92.jar                   |Tinkers' Construct            |tconstruct                    |3.10.2.92           |DONE      |Manifest: NOSIGNATURE
+		create_better_villagers-1.3.2.jar                 |Create_Better_Villagers       |create_better_villagers       |1.3.2               |DONE      |Manifest: NOSIGNATURE
+		alexscaves-2.0.2.jar                              |Alex's Caves                  |alexscaves                    |2.0.2               |DONE      |Manifest: NOSIGNATURE
+		simplyswords-forge-1.56.0-1.20.1.jar              |Simply Swords                 |simplyswords                  |1.56.0-1.20.1       |DONE      |Manifest: NOSIGNATURE
+		SpartanShields-1.20.1-forge-3.1.1.jar             |Spartan Shields               |spartanshields                |3.1.1               |DONE      |Manifest: NOSIGNATURE
+		create-stuff-additions1.20.1_v2.1.0.jar           |Create Stuff & Additions      |create_sa                     |2.1.0               |DONE      |Manifest: NOSIGNATURE
+		StorageDrawers-forge-1.20.1-12.14.3.jar           |Storage Drawers               |storagedrawers                |12.14.3             |DONE      |Manifest: NOSIGNATURE
+		irons_spellbooks-1.20.1-3.4.0.11.jar              |Iron's Spells 'n Spellbooks   |irons_spellbooks              |1.20.1-3.4.0.11     |DONE      |Manifest: NOSIGNATURE
+		ToughAsNails-forge-1.20.1-9.2.0.171.jar           |Tough As Nails                |toughasnails                  |9.2.0.171           |DONE      |Manifest: NOSIGNATURE
+		miners_delight-1.20.1-1.2.3.jar                   |Miner's Delight               |miners_delight                |1.20.1-1.2.3        |DONE      |Manifest: NOSIGNATURE
+		dynamicvillage-v0.4-1.20.1.jar                    |Create: Dynamic Village       |dynamicvillage                |0.4                 |DONE      |Manifest: NOSIGNATURE
+		alexsdelight-1.5.jar                              |Alex's Delight                |alexsdelight                  |1.5                 |DONE      |Manifest: NOSIGNATURE
+		Mvw-2.3.3c.jar                                    |MoreVanillaWeapons            |mvw                           |2.3.3c              |DONE      |Manifest: NOSIGNATURE
+		packetfixer-3.3.0-1.18-1.20.4-merged.jar          |PacketFixer                   |packetfixer                   |3.3.0               |DONE      |Manifest: NOSIGNATURE
+		expandability-forge-9.0.4.jar                     |ExpandAbility                 |expandability                 |9.0.4               |DONE      |Manifest: NOSIGNATURE
+		create_enchantment_industry-1.3.3-for-create-6.0.6|Create Enchantment Industry   |create_enchantment_industry   |1.3.3-for-create-6.0|DONE      |Manifest: NOSIGNATURE
+		create_structures_arise-164.37.36-forge-1.20.1.jar|Create: Structures Arise      |create_structures_arise       |164.37.36           |DONE      |Manifest: NOSIGNATURE
+		cherry_village-1.20.1-1.0.0-Forge.jar             |Cherry_Village                |cherry_village                |1.20.1-1.0.0-Forge  |DONE      |Manifest: NOSIGNATURE
+		createaddition-1.20.1-1.3.2.jar                   |Create Crafts & Additions     |createaddition                |1.20.1-1.3.2        |DONE      |Manifest: NOSIGNATURE
+		Enderite-CJ-forge-mc-1.20-2.1.0.jar               |Enderite CJ Edition           |enderite                      |1.20-2.1.0          |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 7a2691d1-9de4-4d86-a3b1-df6b916a2d41
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.0
