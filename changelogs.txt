@@ -1,1 +1,32 @@
-.
+# Klix Ultra Launcher - Release v1.2
+
+## New Features
+
+### Modern UI Overhaul
+- Completely redesigned interface with a sleek, dark theme.
+- New top-bar navigation for easier access to Mods, Resource Packs, and Shaders.
+- Integrated skin preview in the main dashboard.
+
+### Integrated Content Browser
+- **Modrinth Integration**: Browse, search, and install Mods, Resource Packs, Shaders, and Modpacks directly from the launcher.
+- **Smart Filtering**: Sort by relevance, downloads, follows, or update date.
+- **One-Click Install**: Automatically resolves dependencies and installs the correct version for your loader.
+
+### Advanced Version Management
+- Create custom profiles with specific Minecraft versions and Mod Loaders (Fabric, Forge, Quilt, Vanilla).
+- Separate directories for each profile to keep your mods and configs organized.
+- Easy duplication and editing of existing profiles.
+
+### Performance & Core
+- **Auto Java Management**: Automatically detects, downloads, and installs the correct Java runtime for your selected Minecraft version.
+- **Optimized Launching**: Faster game startup with detailed log output for debugging.
+- **System Tray Support**: Option to minimize the launcher to the system tray to keep it running in the background.
+
+## Bug Fixes
+- Fixed an issue where the launcher would not close properly.
+- Resolved crashes related to log window cursor positioning.
+- Improved handling of large file downloads.
+- Fixed display names for installed mods to show readable titles instead of filenames.
+
+## Localization
+- Full support for English and Arabic languages.
