@@ -23,6 +23,8 @@
 - Fixed transparency issues where the background wouldn't show through the changelog viewer.
 - General stability improvements and code cleanup.
 
+----
+
 # Klix Ultra Launcher - Release v1.2
 
 ## New Features
