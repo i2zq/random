@@ -1,3 +1,28 @@
+# Klix Ultra Launcher - Release v1.3
+
+## New Features
+
+### Visual & UI Enhancements
+- **Animated Background**: Added a stunning new dynamic background with gradients and constellation particle effects.
+- **Custom Title Bar**: Replaced the standard Windows frame with a sleek, custom-designed title bar that integrates perfectly with the dark theme.
+- **Smooth Animations**: Introduced fade transitions between pages and animated hover effects for all buttons and toggles.
+- **Refined Interface**: Improved transparency effects, padding, and font sizes across the application for a more modern look.
+
+### Performance & Core
+- **Smart Caching System**: Implemented a robust caching manager for API requests and images, significantly speeding up the browsing experience.
+- **Optimized Launching**: Fixed a critical issue where game files were re-downloaded on every launch. The launcher now intelligently verifies existing files.
+- **Auto-Save Settings**: Removed the manual save button. Settings are now saved automatically with a visual "Saved" indicator.
+
+### Quality of Life
+- **Clear Cache**: Added a dedicated button in settings to clear temporary files and free up space.
+- **Compact Sidebar**: Optimized the layout of the installed content sidebar for better space utilization.
+
+## Bug Fixes
+- Fixed a crash related to account loading (`token` error) when using older account files.
+- Resolved graphical glitches and console spam related to page transition animations.
+- Fixed transparency issues where the background wouldn't show through the changelog viewer.
+- General stability improvements and code cleanup.
+
 # Klix Ultra Launcher - Release v1.2
 
 ## New Features
