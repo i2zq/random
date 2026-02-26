@@ -1,4 +1,4 @@
-# Klix Ultra Launcher - Release v1.3
+# Routonia Launcher - Release v1.3
 
 ## New Features
 
@@ -25,7 +25,7 @@
 
 ----
 
-# Klix Ultra Launcher - Release v1.2
+# Routonia Launcher - Release v1.2
 
 ## New Features
 
